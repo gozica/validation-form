@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: azure;
+    background-color: #0F417A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,3 +16,20 @@ body{
 
 }
 
+.container{
+    display: flex;
+gap: 20px;
+background-color: #fff;
+width: 100%;
+max-width: 920px;
+padding: 23px;
+border-radius: 10px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.container img{
+    width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+}
