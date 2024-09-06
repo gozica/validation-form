@@ -33,3 +33,57 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     object-fit: cover;
 }
+
+
+.container form{
+    width: 50%;
+
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea{
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #68a3e7;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(137, 183, 203);
+    
+}
+
+.modal{
+    display: none;
+}
+
