@@ -13,8 +13,11 @@ body{
     justify-content: center;
     height: 100vh;
     padding: 0 20px;
+   
 
 }
+
+
 
 .container{
     display: flex;
@@ -32,8 +35,17 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 50%;
     border-radius: 20px;
     object-fit: cover;
+     animation: animate 3s linear infinite;
 }
 
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
 
 .container form{
     width: 50%;
