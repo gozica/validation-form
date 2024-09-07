@@ -48,5 +48,36 @@ const message = document.getElementById("message");
     );
   });
 
+//function check inputs
+ function checkInputs() {
+   let isValid = true;
+   validateField(name, name.value.trim() !== "", "Name cannot be blank");
+   validateField(email, isEmail(email.value.trim()), "Not a valid email");
+   validateField(
+     phone,
+     isPhone(phone.value.trim()),
+     "Not a valid phone number"
+   );
+   validateField(
+     password,
+     password.value.trim().length >= 8,
+     "Password must be 8 characters or longer"
+   );
+   validateField(
+     message,
+     message.value.trim() !== "",
+     "Message cannot be blank"
+   );
+
+   document.querySelectorAll(".form-control").forEach((control) => {
+     if (control.classList.contains("error")) {
+       isValid = false;
+     }
+   });
+   return isValid;
+ }
+
+
+
 
 })
