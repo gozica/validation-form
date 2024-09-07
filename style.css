@@ -97,5 +97,35 @@ button:hover{
 
 .modal{
     display: none;
+   
 }
 
+.form-control .icon{
+    position: absolute;
+    right: 10px;
+    top: 71%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: transparent;
+    pointer-events: none;
+}
+
+.form-control.success input,
+.form-control.success textarea{
+    border-color: turquoise;
+}
+
+.form-control.success .icon{
+    color: turquoise;
+}
+
+.form-control.error input,
+.form-control.error textarea{
+    border-color: red;
+}
+
+.form-control.error .icon,
+.form-control.error input::placeholder,
+.form-control.error textarea::placeholder{
+    color: red;
+}
